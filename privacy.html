@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aura · Privacy</title>
+<style>
+  :root { --bg: #08090b; --ink: #f1ede4; --ink-2: #b8b3a8; --line: #23252a; --accent: #e8c27a; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f3f0e9; --ink: #16171a; --ink-2: #55524b; --line: #dcd7cc; --accent: #9a6b14; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font: 400 40px/1.1 Georgia, serif; margin: 0 0 6px; }
+  h2 { font-size: 18px; margin: 36px 0 8px; }
+  p, li { color: var(--ink-2); }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+  .meta { font-size: 13px; color: var(--ink-2); border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← Aura</a></p>
+  <h1>Privacy</h1>
+  <p class="meta">Aura, a calisthenics training and assessment app. Last updated 16 November 2026.</p>
+
+  <p>This page says what Aura keeps about you, why, who can see it, and how to have it removed. Aura does not show ads, does not sell data, and does not track you across other sites.</p>
+
+  <h2>What Aura keeps</h2>
+  <ul>
+    <li><strong>Your account.</strong> If you sign in with Google: your name, email address and an account identifier from Google. If you join an assessment as a guest: only the name you type.</li>
+    <li><strong>Your profile.</strong> What you fill in: handle, short bio, goals, equipment, weekly target, and, only if you add them, where you are from, the city you train in and your preferred training environments.</li>
+    <li><strong>Your training.</strong> Sessions you log, the results you record, assessment results, and your coach's notes and verifications on them. Your ratings and Aura score are calculated from these.</li>
+  </ul>
+
+  <h2>Location</h2>
+  <p>Aura reads your device's location only when you tap a button that asks for it (for example "use my location" on the map), once, and does not store it or send it to Aura's servers. Check-ins at training places are kept on your device. Where you train is never used in any rating.</p>
+
+  <h2>Who can see what</h2>
+  <ul>
+    <li><strong>You</strong> see everything on your profile.</li>
+    <li><strong>A coach</strong> sees your results in an assessment you joined from their invitation, and your training and results while you are enrolled in one of their courses.</li>
+    <li><strong>Others in an assessment group</strong> see your name and six-dimension profile shape only if you choose to share it with the group, and never your individual results.</li>
+    <li>Your name, handle and profile basics are visible to other signed-in Aura users. For the optional details about where you are from and where you train, you choose who sees each one: only you, people you follow, or everyone.</li>
+  </ul>
+
+  <h2>Services Aura relies on</h2>
+  <ul>
+    <li><strong>Supabase</strong> stores your account and data and handles sign-in.</li>
+    <li><strong>Google</strong> confirms who you are when you choose to sign in with Google.</li>
+    <li><strong>GitHub Pages</strong> serves the app itself.</li>
+    <li>On the map: <strong>OpenFreeMap</strong> (map images) and <strong>OpenStreetMap</strong> services (places and place search). They receive the map area or the place name you search, never your identity.</li>
+  </ul>
+
+  <h2>Keeping and deleting</h2>
+  <p>Your data is kept while you have an account. A guest profile that is never kept with a sign-in may be deleted after 30 days. To have your account and everything in it deleted, or to receive a copy of it, email the address below; it is done within 30 days.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:nathanvaevin@gmail.com">nathanvaevin@gmail.com</a>.</p>
+
+  <p><a href="terms.html">Terms of use</a></p>
+</main>
+</body>
+</html>

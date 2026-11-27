@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-scheme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#08090B" />
+    <meta name="description" content="Aura — make human potential visible. Calisthenics mastery, skill trees and coaching." />
+    <link rel="icon" href="/favicon.ico" sizes="32x32 48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Aura</title>
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem('aura:v1') || '{}');
+        var t = s && s.state && s.state.settings && s.state.settings.theme;
+        if (t === 'light' || t === 'dark' || t === 'power' || t === 'power-light' || t === 'iron') {
+          document.documentElement.dataset.theme = t;
+          document.documentElement.dataset.scheme = t === 'light' || t === 'power-light' ? 'light' : 'dark';
+        }
+        var u = t === 'power' || t === 'power-light' ? 'power' : t === 'iron' ? 'iron' : 'aura';
+        var c = s && s.state && s.state.settings && s.state.settings.tones && s.state.settings.tones[u];
+        if (typeof c === 'string' && /^[a-z]+$/.test(c) && location.pathname.indexOf('/assess/') !== 0) document.documentElement.dataset.tone = c;
+        if (s && s.state && s.state.settings && s.state.settings.size === 'large') document.documentElement.dataset.size = 'large';
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/assets/index-l_hWfAwn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BOZzEaJ5.css">
+    <link rel="modulepreload" crossorigin href="/assets/boot-C4mL7pqc.js">
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="/assets/jsx-runtime-C3cWAN_r.js">
+    <link rel="modulepreload" crossorigin href="/assets/primitives-CfUyN0Pd.js">
+    <link rel="modulepreload" crossorigin href="/assets/format-DxGt3k-5.js">
+    <link rel="modulepreload" crossorigin href="/assets/content-DPcte-ng.js">
+    <link rel="modulepreload" crossorigin href="/assets/revisions-DNKSrjpR.js">
+    <link rel="modulepreload" crossorigin href="/assets/MuscleMap-Cd44WsE7.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-l_hWfAwn.js">
+    <link rel="modulepreload" crossorigin href="/assets/play-Cj0lIhd6.js">
+    <link rel="modulepreload" crossorigin href="/assets/styles-B9GxsA_B.js">
+    <link rel="modulepreload" crossorigin href="/assets/Stage3D-D_WgoCqm.js">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
